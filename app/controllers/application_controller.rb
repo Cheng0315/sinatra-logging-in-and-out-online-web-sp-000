@@ -28,7 +28,7 @@ class ApplicationController < Sinatra::Base
     end
   end
 
-  get post '/account' do
+  get '/account' do
     erb :error
   end
 
