@@ -24,7 +24,7 @@ class ApplicationController < Sinatra::Base
     if Helpers.is_logged_in?(session)
       erb :account
     else
-      <h1>You Must <a href="/">Log In</a> to View Your Balance</h1>
+      "You Must <a href="/">Log In</a> to View Your Balance"
     end
   end
 
