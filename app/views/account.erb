@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">  
   </head>
   <body id="page-top">
-    <h1>Welcome <%=Helper.current_user(session).username%></h1>
-    <h1>Your current balance: <%=Helper.current_user(session).balance%></h1>
+    <h1>Welcome <%="#{Helper.current_user(session).username}"%></h1>
+    <h3>Your current balance: <%="#{Helper.current_user(session).balance}"%></h3>
     <form action="/logout" method="get">
     <input type="submit" value="Log Out">
     </form>
