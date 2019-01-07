@@ -21,8 +21,11 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-
+    if Helpers.current_user(session)
+      erb :account
+    else
       erb :error
+    end
   end
 
   get '/logout' do
